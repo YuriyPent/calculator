@@ -7,6 +7,7 @@ import java.awt.*;
  * Created by yurap on 17.10.2017.
  */
 public class SimpleCalculator {
+
     JPanel windowContent;
     JTextField displatField;
     JButton button0;
@@ -65,6 +66,7 @@ public class SimpleCalculator {
         frame.setVisible(true);
         CalculatorEngine calculatorEngine = new CalculatorEngine();
         button0.addActionListener(calculatorEngine);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
     }
     public static void main (String[] args){
