@@ -63,7 +63,7 @@ public class SimpleCalculator {
         frame.setContentPane(windowContent);
         frame.pack();
         frame.setVisible(true);
-
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         CalculatorEngine calculatorEngine = new CalculatorEngine(this);
 
         button0.addActionListener(calculatorEngine);
